@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:white;
+}
+.face{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background: #ffee00;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.right-eye{
+    display: flex;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: 5px solid#000;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    margin-right: -80px;
+}
+.right-eye-ball{
+
+    width: 30px;
+    height: 30px;
+    background: #000;
+    display: flex;
+    border-radius: 50%;
+    margin-bottom: -10px;
+    margin-left: -10px;
+}
+.left-eye{
+    display: flex;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: 5px solid#000;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    margin-left: -80px;
+}
+.left-eye-ball{
+    width: 30px;
+    height: 30px;
+    background: #000;
+    display: flex;
+    border-radius: 50%;
+    margin-bottom: -10px;
+    margin-left: -10px;
+}
+.mouth{
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    border-radius: 50%;
+    margin-bottom: -80px;
+    position: absolute;
+}
+.tongue{
+    height: 50px;
+    width: 40px;
+    background: red;
+    border-radius: 10px 10px 50% 50%;
+    margin-bottom: -40px;
+}
+.face:hover .right-eye-ball{
+    margin: 0;
+}
+.face:hover .left-eye-ball{
+    margin: 0;
+}
+.face:hover .mouth{
+    height:10px;
+}
+.face:hover .tongue{
+    display: none;
+}
